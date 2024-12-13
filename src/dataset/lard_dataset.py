@@ -6,7 +6,7 @@ import pandas as pd
 import numpy as np
 from pathlib import Path, PureWindowsPath
 from typing import Union
-from src.labeling.labels import Labels
+from LARD.src.labeling.labels import Labels
 from glob import glob
 
 
@@ -221,7 +221,8 @@ class LardDataset:
         os.makedirs(output_dir, exist_ok=True)
         for name, dataset in self.datasets.items():
             print(f"------ Exporting {name} dataset -------")
-            dataset_dir = output_dir / name
+            # dataset_dir = output_dir / name
+            dataset_dir = output_dir
             os.makedirs(dataset_dir, exist_ok=True)
             image_dir = dataset_dir / "images"
             os.makedirs(image_dir, exist_ok=True)

@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 from pathlib import PurePath, Path
-from src.labeling.export_config import CORNERS_NAMES
+from LARD.src.labeling.export_config import CORNERS_NAMES
 from typing import Union, List
 
 
